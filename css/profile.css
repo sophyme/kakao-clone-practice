@@ -1,0 +1,64 @@
+.top-header--transparent {
+  background-color: transparent;
+}
+.profile .profile__header {
+  height: 80vh;
+  background-image: url(http://www.vectorfree.com/media/vectors/google-plus-swatch-pattern.jpg);
+  background-position: center;
+  width: 100%;
+  position: relative;
+  top: -60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.profile__header .profile__header-container {
+  text-align: center;
+  position: relative;
+  bottom: -60px;
+}
+.profile__header-title {
+  font-weight: 800;
+}
+.profile__header-container img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.profile .profile__container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile__container input {
+  text-align: center;
+  border: 0.5px solid #bcbbbc;
+  padding: 3px;
+  font-size: 11px;
+  margin-bottom: 17px;
+  color: #bcbbbc;
+}
+.profile__actions {
+  display: flex;
+}
+.profile__action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.profile__action-circle {
+  background-color: #f0eef0;
+  padding: 15px;
+  border-radius: 50%;
+  color: #50393b;
+  margin-bottom: 10px;
+}
+.profile__action-title {
+  color: #817f85;
+  font-size: 11px;
+  font-weight: 600;
+}
