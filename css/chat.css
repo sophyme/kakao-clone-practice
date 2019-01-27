@@ -1,3 +1,6 @@
+.body-chat {
+  padding-bottom: 0;
+}
 .chat-header,
 .chat-header a {
   background-color: #94b4d5;
@@ -14,7 +17,7 @@
 .chat {
   background-color: #94b4d5;
   height: 100vh;
-  padding-top: 15px;
+  padding: 15px 0 5px 5px;
 }
 .chat .date-divider {
   text-align: center;
@@ -23,16 +26,22 @@
   margin-bottom: 10px;
 }
 .chat__message {
-}
-.chat__message--from-me {
+  margin-bottom: 10px;
   display: flex;
   justify-content: flex-end;
 }
+
+.chat__message--from-me {
+  align-items: flex-end;
+}
 .chat__message--from-me .chat__message-body {
-  padding: 8px 7px;
   background-color: #ffdd00;
-  border-radius: 5px;
   margin: 0 5px;
+}
+.chat__message-body {
+  background-color: white;
+  padding: 8px 7px;
+  border-radius: 5px;
 }
 .chat__message-time {
   display: flex;
@@ -44,12 +53,57 @@
   display: flex;
   justify-content: flex-start;
 }
-.chat__message--to-me .chat__message-avatar {
+.chat__message--to-me img {
   height: 30px;
-  width: 30px;
   border-radius: 50%;
+  margin-right: 10px;
+  align-self: flex-start;
 }
-.chat__message--to-me .chat__message-body {
-  padding: 8px 7px;
-  background-color: white;
+.chat__message .chat__message-username {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.chat__message-center {
+  display: flex;
+  flex-direction: column;
+}
+.type-message {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 45px;
+  background: #eae8ec;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 5px;
+}
+.type-message .fa-plus {
+  color: #78767a;
+}
+.type-message__input {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.type-message__input input {
+  width: 100%;
+  padding: 7px;
+}
+.type-message__input .fa-smile {
+  position: absolute;
+  right: 40px;
+  color: #c2bfc3;
+}
+.type-message__input .record-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9px;
+  background-color: #ffda11;
+  color: #6a3c3c;
+  cursor: pointer;
 }
