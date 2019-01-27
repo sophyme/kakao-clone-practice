@@ -47,9 +47,10 @@
   color: #4d3131;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
+  transition: color 2s, background 0.5s, transform 1s ease-in-out;
 }
 .chats-btn:hover {
   color: #ffdd2a;
   background-color: #4d3131;
+  transform: rotateY(0.5turn);
 }
